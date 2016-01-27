@@ -7,7 +7,7 @@
 
 ## Overview
 
-[CanCan] is pretty nice when you have a simple permissions model. For that matter, performing authorization checks in controllers is perfectly fine for simple applications.
+[CanCanCan](https://github.com/CanCanCommunity/cancancan) is pretty nice when you have a simple permissions model. For that matter, performing authorization checks in controllers is perfectly fine for simple applications.
 
 What happens when, inevitably, your application is no longer simple?
 
