@@ -105,8 +105,8 @@ Pundit's data model makes testing your authorization code very easy. Where befor
       test "users can't update others posts" do
         amethyst = users(:amethyst)
         post = posts(:garnet_private)
-	      expect(post.user).not_to eq(methyst)
-	      expect(PostPolicy.new(amethyst, post).update?).to be false
+        expect(post.user).not_to eq(methyst)
+        expect(PostPolicy.new(amethyst, post).update?).to be false
       end
     end
 ```
