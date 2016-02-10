@@ -11,7 +11,7 @@
 
 What happens when, inevitably, your application is no longer simple?
 
-You'll quickly find that your controllers are littered with authorization checks. Or, in CanCan, your `Ability` class will grow until it starts to be manageable.
+You'll quickly find that your controllers are littered with authorization checks. Or, in CanCan, your `Ability` class will grow until it starts to be unmanageable.
 
 [Pundit] offers a way for us to organize our authorization code. With Pundit, you create `Policy` classes for your models, which define what users can do to those models. This gives you a straightforward, modular way to separate the concern of authorization from your controllers and your model logic.
 
@@ -184,3 +184,5 @@ The documentation is extremely useful, and I recommend reading through it. As yo
 
 [Devise]: https://github.com/plataformatec/devise
 [Pundit]: https://github.com/elabs/pundit
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/devise_pundit_readme'>Devise and Pundit</a> on Learn.co and start learning to code for free.</p>
