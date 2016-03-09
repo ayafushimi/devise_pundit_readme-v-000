@@ -63,7 +63,7 @@ This policy says that admins and moderators can update any post, and users who a
        super(user, post)
        @post = record
      end
-     
+
      def update?
        user.admin? || user.moderator? || post.try(:user) == user
      end
@@ -105,7 +105,7 @@ Pundit's data model makes testing your authorization code very easy. Where befor
       test "users can't update others posts" do
         amethyst = users(:amethyst)
         post = posts(:garnet_private)
-        expect(post.user).not_to eq(methyst)
+        expect(post.user).not_to eq(amethyst)
         expect(PostPolicy.new(amethyst, post).update?).to be false
       end
     end
@@ -114,7 +114,7 @@ Pundit's data model makes testing your authorization code very easy. Where befor
 
 Let's add a feature to our message board: drafts. `Posts` now have a `published?` method, and only `admins` can see unpublished posts.
 
-In our `Post#index` route, we want to show the user all the posts they have access to. Pundit uses a `Scope` to give us easy access to that information, particularly in our views. 
+In our `Post#index` route, we want to show the user all the posts they have access to. Pundit uses a `Scope` to give us easy access to that information, particularly in our views.
 
 To use it, you define a class named `Scope`, which inherits from `Scope`, inside your policy:
 ```ruby
