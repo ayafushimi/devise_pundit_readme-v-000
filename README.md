@@ -143,7 +143,7 @@ In your views, you use it like this:
 
 Pundit also gives you tools for controlling what attributes of a model a user can update. This is *fabulous*.
 
-To use it, add a `permitted_methods` method to your Policy:
+To use it, add a `permitted_attributes` method to your Policy:
 ```ruby
     class PostPolicy < ApplicationPolicy
       def permitted_attributes
