@@ -43,7 +43,7 @@ Consider a message board with these roles:
 
 Let's implement this in Pundit with policies.
 
-In Pundit, you keep your authorization rules in `Policy` classes. A policy is a class named like `<model>Policy`. For example, `PostPolicy` describes the policy for a the `Post` model. You keep these in `app/policies`. For example,
+In Pundit, you keep your authorization rules in `Policy` classes. A policy is a class named like `<model>Policy`. For example, `PostPolicy` describes the policy for a `Post` model. You keep these in `app/policies`. For example,
 ```ruby
    # app/policies/post_policy.rb
    class PostPolicy < ApplicationPolicy
@@ -186,3 +186,5 @@ The documentation is extremely useful, and I recommend reading through it. As yo
 [Pundit]: https://github.com/elabs/pundit
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/devise_pundit_readme'>Devise and Pundit</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/devise_pundit_readme'>Devise and Pundit</a> on Learn.co and start learning to code for free.</p>
